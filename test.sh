@@ -5,8 +5,7 @@ git config --global user.email "aki.bdash@gmail.com"
 
 git remote set-url origin https://beet-aizu:${GITHUB_TOKEN}@github.com/beet-aizu/github_actions.git
 
-git branch -a
-git checkout -b develop
+git checkout -b master
 git branch -a
 
 git log -1
