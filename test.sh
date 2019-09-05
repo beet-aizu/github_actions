@@ -6,7 +6,7 @@ git config --global user.email "aki.bdash@gmail.com"
 git remote set-url origin https://beet-aizu:${GITHUB_TOKEN}@github.com/beet-aizu/github_actions.git
 
 git branch -a
-git fetch
+git checkout -b develop
 git branch -a
 
 git log -1
@@ -18,5 +18,5 @@ if [ -z "$(echo $last_commit_message | grep updater)" ]; then
     cat last_commit.txt
     git add last_commit.txt
     git commit -m '[updater] update last commit'
-    git push origin/develop HEAD
+    git push origin HEAD
 fi
