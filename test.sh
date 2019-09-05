@@ -5,6 +5,10 @@ git config --global user.email "aki.bdash@gmail.com"
 
 git remote set-url origin https://beet-aizu:${GITHUB_TOKEN}@github.com/beet-aizu/github_actions.git
 
+git branch -a
+git fetch
+git branch -a
+
 git log -1
 last_commit_message="$(git log -1 | tail -1)"
 echo $last_commit_message
