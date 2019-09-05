@@ -14,5 +14,5 @@ if [ -z "$(echo $last_commit_message | grep updater)" ]; then
     cat last_commit.txt
     git add last_commit.txt
     git commit -m '[updater] update last commit'
-    git push origin/master HEAD
+    git push origin/develop HEAD
 fi
