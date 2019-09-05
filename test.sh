@@ -1,5 +1,8 @@
 #!/bin/bash
 
+git config --global user.name "beet"
+git config --global user.email "you@example.com"
+
 git remote set-url origin https://beet-aizu:${GITHUB_TOKEN}@github.com/beet-aizu/github_actions.git
 
 git log -1 | head -1 > last_commit.txt
